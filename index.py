@@ -21,9 +21,7 @@ for i in range(len(arr)):
         index = index + 1
 
 
-print(index)
+for i in range(index, len(arr)):
+    arr[i] = 0
 
-for index in range(len(arr)):
-    arr[index] = 0
-
-print("All Zero in the End : ", index)
+print("All Zero in the End : ", arr)
