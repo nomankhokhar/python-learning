@@ -15,6 +15,7 @@ if age >= 18:
 else:
     print("Not Eligible")
 
+print('\n')
 print(comment)
 
 arr = [1, 0, 2, 0, 4665, 0, 35, 4, 0, 64, 6, 45, 75675, 675655]
