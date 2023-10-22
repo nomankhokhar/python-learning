@@ -8,6 +8,13 @@ comment = """
 I am Python Learning LOL Best in the Developer it's my though but it's may be or may not be true
 """
 
+age = 18
+
+if age >= 18:
+    print("Eligible")
+else:
+    print("Not Eligible")
+
 print(comment)
 
 arr = [1, 0, 2, 0, 4665, 0, 35, 4, 0, 64, 6, 45, 75675, 675655]
