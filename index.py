@@ -116,3 +116,50 @@
 #     print("It's Cold")
 
 # print("Done")
+
+
+# #Ternary Operator
+# age = 22
+
+# messages = "Eligible" if age >= 18 else "Not Eligible"
+
+# print(messages)
+
+
+# high_income = True
+# good_income = False
+
+# if high_income == True and good_income:
+#     print("You are Eligible for loan")
+
+# student = False
+
+# if not student:
+#     print("Eligible not work in Boolean case")
+
+# if high_income and good_income:
+#     print("You are Eligible for loan")
+# else:
+#     print("You are not Eligible for load")
+
+
+# # For loop's in Python's
+
+# for i in range(3):
+#     print("Attempt", i + 1, (i+1) * ".")
+
+
+# for i in range(1, 3):
+#     print("Attempt", i + 1, (i+1) * ".")
+
+
+# for i in range(1, 3, 2):
+#     print("Attempt", i + 1, (i+1) * ".")
+#     if True:
+#         print("Successfull")
+#         break
+
+# for i in range(10):
+#     for j in range(10):
+#         print(i*j)
+#     print("\n")
