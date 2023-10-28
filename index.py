@@ -163,3 +163,86 @@
 #     for j in range(10):
 #         print(i*j)
 #     print("\n")
+
+
+# for x in "Python":
+#     print(x)
+
+
+# for x in [1, 2, 3, 4]:
+#     print(x)
+
+
+# number = 100
+
+# while number > 0:
+#     print(number)
+#     number //= 2
+
+
+# command = ""
+# while True:
+#     command = input(">")
+#     print("ECHO", command)
+#     if command.lower() == 'quit':
+#         break
+
+
+# Function's in Function's
+
+# def greet(first_name, last_name):
+#     print(f"Welcome {first_name} {last_name}")
+
+
+# greet("Noman", "Ali")
+
+
+# def get_greeting(name="No_Name"):
+#     return f"Welcome {name}"
+
+
+# message = get_greeting("Noman Ali")
+# file = open("content.txt", "w")
+# file.write(message)
+
+
+# def multiply(*numbers):
+#     total = 1
+#     for number in numbers:
+#         total *= number
+#     return total
+
+
+# print(multiply(2, 3, 4))
+
+# msg = 'a'
+
+
+# def save_user(**user):
+#     global msg
+#     msg = 'b'
+#     print(user['id'])
+#     print(user['name'])
+#     print(user['age'])
+
+
+# save_user(id=1, name="Noman", age=22)
+
+
+# ctrl + HOME
+# ctrl + END
+
+
+# FizzBuzz Problem
+
+# def fizz_buzz(input):
+#     if (input % 5 == 0) and (input % 3 == 0):
+#         return 'FizzBuzz'
+#     if input % 3 == 0:
+#         return 'Fizz'
+#     elif input % 5 == 0:
+#         return 'Buzz'
+#     return input
+
+
+# print(fizz_buzz(7))
