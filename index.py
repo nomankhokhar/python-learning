@@ -246,3 +246,39 @@
 
 
 # print(fizz_buzz(7))
+
+
+# # Data Structure's in Python
+
+# # list have same Method's as string [0], [0:2] and [0:-1]
+# letters = ['a', 'b', 'c']
+# matrix = [[0, 1], [2, 3]]
+# zeros = list(range(20))
+# combined = zeros + letters
+# numbers = list(range(20))
+# chars = list("Hello World")
+# print(letters)
+# print(matrix)
+# print(zeros[::2])  # this will return every even index
+# print(zeros[::-3])  # this will return every even index
+# print(combined)
+# print(numbers)
+# print(chars)
+
+
+# # list unpacking in Python
+
+# nums = [1, 2, 3, 3, 5, 6, 456, 4, 7, 500]
+
+# first, sec, third, *other = nums
+# firsted, *other, lasted = nums
+
+# print(first, sec, third, other)
+# print(firsted, lasted)
+# print(other)
+
+# letter_s = ['q', 'b', 'f', 'l']
+
+# # enumerate return index and value otherwise without this item will return
+# for index, letter in enumerate(letter_s):
+#     print(index, letter)
