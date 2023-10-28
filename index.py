@@ -103,3 +103,16 @@
 # print(10 != 1)
 # print(10 == 10)
 # print(10 != "10")
+
+
+# temperature = -35
+
+# if temperature > 20:
+#     print("It's warm")
+#     print("Temperature is High then 30")
+# elif temperature > 30:
+#     print(temperature)
+# else:
+#     print("It's Cold")
+
+# print("Done")
