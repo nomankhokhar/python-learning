@@ -1,39 +1,16 @@
 # Variables
 
-noman = "Noman Ali"
+Student_count = 1000
+rating = 4.99
+is_published = True
+course_name = "Python Programming"
 
-print(noman)
+print(Student_count)
+
+# linter check Syntax Error
 
 comment = """
-I am Python Learning LOL Best in the Developer it's my though but it's may be or may not be true
+I am Python Learning LOL Best in the Developer. It's my though but it's may be or may not be true
 """
 
-age = 18
-
-if age >= 18:
-    print("Eligible")
-else:
-    print("Not Eligible")
-
-
-print('\n')
-
-
-print(comment, "LOL")
-
-
-arr = [1, 0, 2, 0, 4665, 0, 35, 4, 0, 64, 6, 45, 75675, 675655]
-print('Orignal Arr : ', arr)
-
-index = 0
-
-for i in range(len(arr)):
-    if arr[i] != 0:
-        arr[index] = arr[i]
-        index = index + 1
-
-
-for i in range(index, len(arr)):
-    arr[i] = 0
-
-print("All Zero in the End : ", arr)
+print(comment * 10)
