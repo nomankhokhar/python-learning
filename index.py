@@ -24,6 +24,24 @@ print("Slice From 2 to 100 :  ", comment[2:])
 # \"
 # \n
 # \\
-course = "Python \'Course\' with me"
 
-print(f"Noman is Learning a {course}")
+
+# Strings Method's
+course = "   Python \'Course\' with me    "
+
+print(course.upper())
+print(course.lower())
+print(course.title())
+print(course.strip())
+print(course.rstrip())
+print(course.lstrip())
+
+
+# If find then return Index otherWise -1
+print(course.find("me"))   # return Index
+print(course.replace("P", 'j'))
+print("swift" not in course)  # Return Boolean Value
+print("me" in course)  # Return Boolean Value
+
+
+# Number's in Python
