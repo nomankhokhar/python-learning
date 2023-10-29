@@ -18,7 +18,7 @@ else:
 
 print('\n')
 
-print(comment)
+print(comment, "LOL")
 
 
 arr = [1, 0, 2, 0, 4665, 0, 35, 4, 0, 64, 6, 45, 75675, 675655]
