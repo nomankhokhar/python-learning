@@ -282,3 +282,61 @@
 # # enumerate return index and value otherwise without this item will return
 # for index, letter in enumerate(letter_s):
 #     print(index, letter)
+
+# letter_s.append('a')
+# print(letter_s)
+
+# if 'b' in letter_s:
+#     print("b is available")
+
+
+# letter_s.insert(0, '_')  # to insert at specific location's
+# print(letter_s)
+
+# # we can add specific index or not
+# letter_s.pop(0)
+# print(letter_s.sort())
+
+# letter_s.remove("b")
+# print(letter_s)
+
+# del letter_s[0:3]
+# print(letter_s)
+
+# letter_s.clear()
+# print(letter_s)
+
+
+items = [
+    ('1', 10),
+    ('2', 9),
+    ('3', 12),
+]
+
+# def sort_item(item):
+#     return item[1]
+
+# # both are same below one is GoodOne
+
+# items.sort(key=sort_item)
+# items.sort(key=lambda item: item[1]) # this one
+# print(items)
+
+
+# Another Method
+
+
+# x = map(lambda item: item[1], items)
+# print(x)
+# x = list(map(lambda item: item[1], items))
+# print(x)
+
+# for item in x:
+#     print(item)
+
+
+# Again Another Method's for Lambda
+
+
+filtered = list(filter(lambda item: item[1] >= 10, items))
+print(filtered)
