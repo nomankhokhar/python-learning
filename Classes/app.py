@@ -61,3 +61,6 @@
 # combined = point_magic_string_method_E + point_magic_string_method_S
 
 # print(combined)
+
+
+# Another Class
