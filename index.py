@@ -344,5 +344,10 @@ items = [
 
 # Again Best One List Comprehension's
 
+# we can use this to destruction's of an Object
 price = [item[1] for item in items]
+print(price)
+
+# we can use this as a Filter
+price = [item[1] for item in items if item[1] >= 10]
 print(price)
