@@ -307,11 +307,11 @@
 # print(letter_s)
 
 
-items = [
-    ('1', 10),
-    ('2', 9),
-    ('3', 12),
-]
+# items = [
+#     ('1', 10),
+#     ('2', 9),
+#     ('3', 12),
+# ]
 
 # def sort_item(item):
 #     return item[1]
@@ -344,10 +344,92 @@ items = [
 
 # Again Best One List Comprehension's
 
-# we can use this to destruction's of an Object
-price = [item[1] for item in items]
-print(price)
+# #we can use this to destruction's of an Object
+# price = [item[1] for item in items]
+# print(price)
 
-# we can use this as a Filter
-price = [item[1] for item in items if item[1] >= 10]
-print(price)
+# # we can use this as a Filter
+# price = [item[1] for item in items if item[1] >= 10]
+# print(price)
+
+
+# # Combine the two or more list as you want
+# listTwo = [10, 20, 30]
+# listThird = [11, 22, 33]
+# listOne = [1, 2, 3]
+# print(list(zip('abcd', listTwo, listOne, listThird)))
+
+
+# # Stack's LIFO
+
+# browsing_session = []
+# browsing_session.append(1)
+# browsing_session.append(2)
+# browsing_session.append(3)
+# print(browsing_session)
+
+# last = browsing_session.pop()
+
+# print(last)
+
+# print(browsing_session)
+
+# print('Redirect', browsing_session[-1])
+
+# if not browsing_session:
+#     print('disable')
+
+
+# #Queue in Python
+
+# from collections import deque
+
+# queue = deque([])
+# queue.append(1)
+# queue.append(2)
+# queue.append(3)
+# queue.append(4)
+# print(queue)
+
+
+# queue.popleft()
+# print(queue)
+
+
+# queue.pop()
+# print(queue)
+
+# queue.pop()
+# print(queue)
+
+# queue.pop()
+# print(queue)
+
+# if not queue:
+#     print('Empty')
+
+
+# #$Tuples in Python
+# #they are immutable
+
+# point = (1, 2) * 10
+# point = (1, 2) + (3, 4)
+# print(point)
+
+# x, y, z, *oth = point
+# print(x, y, z, *oth)
+
+
+# #Swapping the Variable's
+
+# x = 10
+# y = 11
+
+# print(x, y)
+
+# y, x = x, y
+
+# print(x, y)
+
+
+# Arrays in Python
