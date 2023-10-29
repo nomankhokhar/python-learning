@@ -432,4 +432,111 @@
 # print(x, y)
 
 
-# Arrays in Python
+# # Arrays in Python
+# from array import array
+
+# numbers = array("f", [1, 2, 3])
+# numbers[0] = 1.10
+
+# print(numbers)
+
+
+# # Set in Python
+# # these are collections with no Dublicate
+
+
+# numbers = [2, 3, 4, 5, 5, 5, 5, 5]
+# first = set(numbers)
+# second = {1, 5}
+# # second.add(5)
+# # second.remove(5)
+# # combine all the diff num's
+# print(first | second)
+# # extract the same num's
+# print(first & second)
+# print(first - second)
+# print(first ^ second)
+
+# # we cannot index the set to print the values often we use set to implement these operation's
+
+# if 5 in first:
+#     print("Yes")
+
+
+# # Dictionares in Python
+
+
+# dic_point = {"x": 1, "y": 2}
+# print(dic_point)
+
+# # we can define as well this
+# point_s = dict(x=1, y=2)
+# point_s[1] = 1000
+# print(point_s)
+
+
+# if "a" in point_s:
+#     print('A is Available')
+
+# # if available send the object otherwise None or you define 10
+# print(point_s.get('a', 10))
+
+# del point_s["x"]
+
+# print(point_s)
+
+# # this will return key
+# for value in point_s:
+#     print(value, point_s[value])
+
+# # this will return full key value tuple
+# for item in point_s.items():
+#     print(item)
+
+
+# # list comprehension's
+
+# values = []
+
+# # Both are same but best is comprehension's
+
+# for x in range(5):
+#     values.append(x * 2)
+
+# print(values)
+
+# # this one is comprehension's
+
+# value_s = {x+1: x*2 for x in range(5)}
+# print(value_s)
+
+
+# # Exercise Find Common Word Cound and  then sort base on Count
+# sentence = "This is a common interview question"
+
+# char_frequency = {}
+
+# for char in sentence:
+#     if char in char_frequency:
+#         char_frequency[char] += 1
+#     else:
+#         char_frequency[char] = 1
+
+# # Frequency of Each Value
+
+# print(char_frequency)
+
+# # Both are Good Solution But mine is Best One LOL
+
+# most_fre_used_char = 0
+
+# for key in char_frequency:
+#     if (char_frequency[key] > most_fre_used_char):
+#         most_fre_used_char = char_frequency[key]
+
+# print(most_fre_used_char)
+
+# # Sorting on Frequency Base
+# char_frequency_sorted = sorted(
+#     char_frequency.items(), key=lambda kv: kv[1], reverse=True)
+# print(char_frequency_sorted[0])
