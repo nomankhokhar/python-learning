@@ -338,5 +338,11 @@ items = [
 # Again Another Method's for Lambda
 
 
-filtered = list(filter(lambda item: item[1] >= 10, items))
-print(filtered)
+# filtered = list(filter(lambda item: item[1] >= 10, items))
+# print(filtered)
+
+
+# Again Best One List Comprehension's
+
+price = [item[1] for item in items]
+print(price)
