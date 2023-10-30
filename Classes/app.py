@@ -63,31 +63,89 @@
 # print(combined)
 
 
-# Another Class
+# # Another Class Tags
 
 
-class TagCloud:
-    def __init__(self):
-        self.__tags = {}
+# class TagCloud:
+#     def __init__(self):
+#         self.__tags = {}
 
-    def add(self, tag):
-        self.__tags[tag.lower()] = self.__tags.get(tag.lower(), 0) + 1
+#     def add(self, tag):
+#         self.__tags[tag.lower()] = self.__tags.get(tag.lower(), 0) + 1
 
-    def __getitem__(self, tag):
-        return self.__tags.get(tag.lower(), 0)
+#     def __getitem__(self, tag):
+#         return self.__tags.get(tag.lower(), 0)
 
-    def __setitem__(self, tag, count):
-        self.__tags[tag.lower()] = count
+#     def __setitem__(self, tag, count):
+#         self.__tags[tag.lower()] = count
 
-    def __len__(self):
-        return len(self.__tags)
+#     def __len__(self):
+#         return len(self.__tags)
 
-    def __iter__(self):
-        return iter(self.__tags)
+#     def __iter__(self):
+#         return iter(self.__tags)
 
 
-cloud = TagCloud()
-print(cloud["python"])
-cloud.add("python")
-cloud["python"] = 4
-print(cloud["python"])
+# cloud = TagCloud()
+# print(cloud["python"])
+# cloud.add("python")
+# cloud["python"] = 4
+# print(cloud["python"])
+# print(cloud._TagCloud__tags)
+
+
+# # Another Product Class
+
+# class Product:
+#     def __init__(self, price):
+#         self.price = price
+
+#     @property
+#     def price(self):
+#         return self.__price
+
+#     @price.setter
+#     def price(self, value):
+#         if value < 0:
+#             raise ValueError("Price cannot be negative.")
+#         self.__price = value
+
+
+# product = Product(50)
+# product.price = 10
+# print(product.price)
+
+
+# # Intertance
+
+# class Animal:
+#     def __init__(self):
+#         self.age = 10
+
+#     def eat(self):
+#         print("eat")
+
+
+# class Mammal(Animal):
+#     def walk(self):
+#         print("walk")
+
+
+# class Fish(Animal):
+#     def swim(self):
+#         print("swim")
+
+
+# m = Mammal()
+# m.eat()
+# m.walk()
+# print(m.age)
+
+
+# m = Fish()
+# m.eat()
+# m.swim()
+# print(m.age)
+
+
+# Start from 13
