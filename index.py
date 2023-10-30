@@ -40,6 +40,107 @@ print(course.rstrip())
 print(course.lstrip())
 
 
+# Strings Operation
+
+# Define a sample string
+sample_string = "Hello, World! This is a sample string."
+
+# 1. capitalize()
+capitalized_string = sample_string.capitalize()
+print("1. capitalize():", capitalized_string)
+
+# 2. casefold()
+casefolded_string = sample_string.casefold()
+print("2. casefold():", casefolded_string)
+
+# 3. center()
+centered_string = sample_string.center(40, "*")
+print("3. center():", centered_string)
+
+# 4. count()
+substring_count = sample_string.count("is")
+print("4. count():", substring_count)
+
+# 5. encode()
+encoded_string = sample_string.encode("utf-8")
+print("5. encode():", encoded_string)
+
+# 6. endswith()
+ends_with = sample_string.endswith("string.")
+print("6. endswith():", ends_with)
+
+# 7. expandtabs()
+tabbed_string = "Hello\tTabbed\tText"
+expanded_string = tabbed_string.expandtabs(4)
+print("7. expandtabs():", expanded_string)
+
+# 8. find()
+substring_index = sample_string.find("is")
+print("8. find():", substring_index)
+
+# 9. format()
+formatted_string = "My name is {} and I am {} years old.".format("Alice", 30)
+print("9. format():", formatted_string)
+
+# 10. index()
+substring_index = sample_string.index("is")
+print("10. index():", substring_index)
+
+# 11. isalnum()
+is_alnum = sample_string.isalnum()
+print("11. isalnum():", is_alnum)
+
+# 12. isalpha()
+is_alpha = sample_string.isalpha()
+print("12. isalpha():", is_alpha)
+
+# 13. isdecimal()
+is_decimal = sample_string.isdecimal()
+print("13. isdecimal():", is_decimal)
+
+# 14. isdigit()
+is_digit = sample_string.isdigit()
+print("14. isdigit():", is_digit)
+
+# 15. isidentifier()
+is_identifier = sample_string.isidentifier()
+print("15. isidentifier():", is_identifier)
+
+# 16. islower()
+is_lower = sample_string.islower()
+print("16. islower():", is_lower)
+
+# 17. isnumeric()
+is_numeric = sample_string.isnumeric()
+print("17. isnumeric():", is_numeric)
+
+# 18. isprintable()
+is_printable = sample_string.isprintable()
+print("18. isprintable():", is_printable)
+
+# 19. isspace()
+is_space = sample_string.isspace()
+print("19. isspace():", is_space)
+
+# 20. istitle()
+is_title = sample_string.istitle()
+print("20. istitle():", is_title)
+
+# 21. isupper()
+is_upper = sample_string.isupper()
+print("21. isupper():", is_upper)
+
+# 22. join()
+words = ["Python", "is", "awesome"]
+joined_string = " ".join(words)
+print("22. join():", joined_string)
+
+# 23. ljust()
+left_justified = sample_string.ljust(40, "-")
+print("23. ljust():", left_justified)
+
+
+
 # If find then return Index otherWise -1
 print(course.find("me"))   # return Index
 print(course.replace("P", 'j'))
