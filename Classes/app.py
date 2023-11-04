@@ -116,30 +116,39 @@
 # print(product.price)
 
 
-# # Intertance
+# Intertance 
 
-# class Animal:
-#     def __init__(self):
-#         self.age = 10
+# Animal class also have method's of Animal Class
+# m = object
 
-#     def eat(self):
-#         print("eat")
+class Animal:
+    def __init__(self):
+        self.age = 10
 
-
-# class Mammal(Animal):
-#     def walk(self):
-#         print("walk")
+    def eat(self):
+        print("eat")
 
 
-# class Fish(Animal):
-#     def swim(self):
-#         print("swim")
+class Mammal(Animal):
+    
+    def __init__(self):
+        self.weight = 10
+        # this method will be called at the end of the Mammal Object Called
+        super().__init__()
+        
+        
+    def walk(self):
+        print("walk")
 
 
-# m = Mammal()
-# m.eat()
-# m.walk()
-# print(m.age)
+class Fish(Animal):
+    def swim(self):
+        print("swim")
+
+
+m = Mammal()
+m.walk()
+print(m.age)
 
 
 # m = Fish()
@@ -148,4 +157,10 @@
 # print(m.age)
 
 
-# Start from 13
+print(isinstance(m,Animal))
+print(isinstance(m,Mammal))
+print(isinstance(m,Fish))
+print(isinstance(m,object))
+
+
+print(m.age, m.weight)
