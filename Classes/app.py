@@ -116,39 +116,39 @@
 # print(product.price)
 
 
-# Intertance 
+# # Intertance 
 
-# Animal class also have method's of Animal Class
-# m = object
+# # Animal class also have method's of Animal Class
+# # m = object
 
-class Animal:
-    def __init__(self):
-        self.age = 10
+# class Animal:
+#     def __init__(self):
+#         self.age = 10
 
-    def eat(self):
-        print("eat")
+#     def eat(self):
+#         print("eat")
 
 
-class Mammal(Animal):
+# class Mammal(Animal):
     
-    def __init__(self):
-        self.weight = 10
-        # this method will be called at the end of the Mammal Object Called
-        super().__init__()
+#     def __init__(self):
+#         self.weight = 10
+#         # this method will be called at the end of the Mammal Object Called
+#         super().__init__()
         
         
-    def walk(self):
-        print("walk")
+#     def walk(self):
+#         print("walk")
 
 
-class Fish(Animal):
-    def swim(self):
-        print("swim")
+# class Fish(Animal):
+#     def swim(self):
+#         print("swim")
 
 
-m = Mammal()
-m.walk()
-print(m.age)
+# m = Mammal()
+# m.walk()
+# print(m.age)
 
 
 # m = Fish()
@@ -157,10 +157,203 @@ print(m.age)
 # print(m.age)
 
 
-print(isinstance(m,Animal))
-print(isinstance(m,Mammal))
-print(isinstance(m,Fish))
-print(isinstance(m,object))
+# print(isinstance(m,Animal))
+# print(isinstance(m,Mammal))
+# print(isinstance(m,Fish))
+# print(isinstance(m,object))
 
 
-print(m.age, m.weight)
+# print(m.age, m.weight)
+
+
+
+
+
+
+
+# # Multi Level Inheritance
+
+# class Animal:
+#     def eat(self):
+#         print("eat")
+        
+        
+        
+        
+# class Bird(Animal):
+#     def fly(self):
+#         print("fly")
+        
+
+# class Chicken(Bird):
+#     pass
+
+
+# # Above Code is Dirty Level Inheritance bcz Bird is Animal and can fly Chicken is animal but not fly this is wrong Level inheritance at all
+        
+    
+    
+# # Multiple Inheritance
+
+# class Person:
+#     def greet(self):
+#         print("Person Greet")
+        
+        
+# class Employee:
+#     def greet(self):
+#         print("Employee Greet")
+        
+        
+# # if Manger do not have greet method then go to next Class Employee
+# class Manager(Employee , Person):
+#     def greet(self):
+#         print("Manager Greet")
+        
+
+# manager = Manager()
+# manager.greet()         
+  
+  
+  
+# #Good Example of Inheritance
+  
+# class Flyer:
+#     def fly(self):
+#         pass
+    
+    
+    
+
+# class Swimmer:
+#     def swim(self):
+#         pass
+    
+# class FlyingFish(Flyer , Swimmer):
+#     pass
+
+
+# # above is a good example of Multiple Inheritance
+
+
+# from abc import ABC, abstractmethod
+# class InvalidOperationError(Exception):
+#     pass
+
+
+# # if any class inherit this class those class should have read method's
+# class Stream(ABC):
+#     def __init__(self): 
+#         self.opened = False
+
+#     def open(self):
+#         if self.opened:
+#             raise InvalidOperationError("Stream is already open")
+#         self.opened = True
+    
+#     def close(self):
+#         if not self.opened:
+#             raise InvalidOperationError("Stream is already Close")
+#         self.opened = False
+    
+#     @abstractmethod
+#     def read(self):
+#         pass
+
+
+# class FileStream(Stream):
+#     def read(self):
+#         print("Reading data from a file")
+        
+        
+        
+# class NetworkStream(Stream):
+#     def read(self):
+#         print("Reading data from a network")
+        
+        
+# class MemoryStream(Stream):
+#     def read(self):
+#         print("Reading data from Memory")
+
+
+# memory = MemoryStream()
+
+# memory.read()
+
+
+
+
+# # Polymorphism
+
+# from abc import ABC, abstractmethod
+
+# class UIControl(ABC):
+#     @abstractmethod
+#     def draw(self):
+#         pass
+
+
+
+# class TextBox(UIControl):
+#     def draw(self):
+#         print("TextBox")
+
+
+# class DropDownList(UIControl):
+#     def draw(self):
+#         print("DropDownList")
+        
+        
+# def draw(controls):
+#     for control in controls:
+#         control.draw()
+    
+    
+# ddl = DropDownList()
+# textbox = TextBox()
+# draw([ddl, textbox])
+
+
+
+
+
+
+# # Extended Built-in Types
+
+# class Text(str):
+#     def _init__(self):
+#         print(self)
+        
+#     def dublicate(self):
+#         return self + self
+    
+    
+# text = Text("Python")
+# print(text.lower())
+# print(text.dublicate())
+
+
+# # when we add in the list this class print a append message while append int class
+
+# class TrackableList(list):
+#     def append(self, object):
+#         print("Append Called")
+#         super().append(object)
+        
+        
+# list = TrackableList()
+# list.append("1")
+
+
+
+
+from collections import namedtuple
+
+# this will create Point Class with x and y attribute
+
+Point = namedtuple("Point",["x","y"])
+p1 = Point(x=1,y=2)
+p2 = Point(x=1,y=2)
+
+print(p1 == p2)
