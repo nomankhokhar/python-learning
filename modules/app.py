@@ -26,3 +26,6 @@
 
 # calc_shipping()
 # calc_tax()
+
+
+# print(dir())
