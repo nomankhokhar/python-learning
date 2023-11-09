@@ -93,5 +93,42 @@ from pathlib import Path
 
 
 
-# Working with SQLite in Python
+# # Working with SQLite in Python
 
+# import sqlite3
+# import json
+# from pathlib import Path
+
+# # You will get and error because you have to install Sqlite DB for inserting data
+# movies = json.loads(Path("movies.json").read_text())
+# with sqlite3.connect("sb.sqlite3") as conn:
+#     command = "INSERT INTO Movies VALUES(?,?,?)"
+#     for movie in movies:
+#         conn.execute(command , tuple(movie.values()))
+#     conn.commit()
+    
+
+# with sqlite3.connect("sb.sqlite3") as conn:
+#     command = "SELECT * FROM Movies"
+#     cursor = conn.execute(command)
+#     for row in cursor:
+#         print(row)
+#     movies = cursor.fetchall()
+#     print(movies)
+#     conn.commit()
+    
+
+
+# Working with timeStamp
+
+import time
+
+def send_emails():
+    for i in range(10000):
+        pass
+    
+start = time.time()
+send_emails()
+end = time.time()
+duration = end - start
+print(duration)
