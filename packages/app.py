@@ -60,10 +60,38 @@ from pathlib import Path
 
 
 
-# Working with CSV Files
-import csv 
+# # Working with CSV Files
+# import csv 
 
-with open("data.csv","w") as file:
-    writer =  csv.writer(file)
-    writer.writerow(["transaction_id","product_id","price_id"])
-    writer.writerow([1000,1,5])
+# with open("data.csv","w") as file:
+#     writer =  csv.writer(file)
+#     writer.writerow(["transaction_id","product_id","price_id"])
+#     writer.writerow([1000,1,5])
+#     writer.writerow([1001,3,15])
+
+# with open('data.csv') as file:
+#     reader = csv.reader(file)
+#     print(list(reader))
+#     for row in reader:
+#         print(row)
+
+
+# # Working with JSON
+
+# import json
+# movies = [
+#     {"id":1,"title":"Terminator", "year":1989},
+#     {"id":2,"title":"Terminator Genisis", "year":1993}    
+# ]
+
+# data = json.dumps(movies)
+# Path("movies.json").write_text(data)
+
+# data = Path("movies.json").read_text()
+# movies = json.loads(data)
+# print(movies)
+
+
+
+# Working with SQLite in Python
+
