@@ -42,17 +42,28 @@ from pathlib import Path
 
 
 
-# Working with Zip files
-from zipfile import ZipFile
+# # Working with Zip files
+# from zipfile import ZipFile
 
-with ZipFile("files.zip","w") as zip:
-    for path in Path("ecommerce").rglob("*.*"):
-        zip.write(path)
+# with ZipFile("files.zip","w") as zip:
+#     for path in Path("ecommerce").rglob("*.*"):
+#         zip.write(path)
         
         
-with ZipFile("files.zip") as zip:
-    print(zip.namelist())
-    info = zip.getinfo("ecommerce/__init__.py")
-    print(info.file_size)
-    print(info.compress_size)
-    zip.extractall("noman")
+# with ZipFile("files.zip") as zip:
+#     print(zip.namelist())
+#     info = zip.getinfo("ecommerce/__init__.py")
+#     print(info.file_size)
+#     print(info.compress_size)
+#     zip.extractall("noman")
+
+
+
+
+# Working with CSV Files
+import csv 
+
+with open("data.csv","w") as file:
+    writer =  csv.writer(file)
+    writer.writerow(["transaction_id","product_id","price_id"])
+    writer.writerow([1000,1,5])
