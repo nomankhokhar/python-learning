@@ -303,3 +303,23 @@ result = subprocess.run(["echo", "$MY_VARIABLE"], stdout=subprocess.PIPE, text=T
 with open("output.txt", "w") as output_file:
     subprocess.run(["ls", "-l"], stdout=output_file, text=True)
 # You can redirect input/output to files by passing file handles instead of subprocess.PIPE.
+
+
+
+# pip packages modules helpers
+
+import requests
+
+res = requests.get("http://google.com")
+print(res)
+
+
+
+# Manageing the Dependencies of Packages command's
+
+# pipenv graph
+# pipenv uninstall requests
+# pipenv install requests=2.9.*
+# pipenv update --outdated
+# pipenv update --outdated
+# pipenv update "request" this will update only request package 
