@@ -151,13 +151,60 @@ from pathlib import Path
 
 
 
-# Working with Random Values
+# # Working with Random Values
 
-import random
-import string
+# import random
+# import string
 
-print(random.random())
-print(random.randint(1,10))
-print(random.choice([1, 2, 3, 4]))
-print(random.choices([1, 2, 3, 4] , k = 2))
-print("".join(random.choices(string.ascii_letters + string.digits , k = 4)))
+# print(random.random())
+# print(random.randint(1,10))
+# print(random.choice([1, 2, 3, 4]))
+# print(random.choices([1, 2, 3, 4] , k = 2))
+# print("".join(random.choices(string.ascii_letters + string.digits , k = 4)))
+
+# # this will rearrange the Number's
+# numbers = [1,2,3,5]
+# random.shuffle(numbers)
+# print(numbers)
+
+
+# # Opening the Browser 
+
+# import webbrowser
+
+# print("Deployement completed")
+# webbrowser.open("http://google.com")
+
+
+
+# # Sending mail to the Person's and template
+
+
+# from email.mime.multipart import MIMEMultipart
+# from email.mime.text import MIMEText
+# from email.mime.image import MIMEImage
+# from pathlib import Path
+# from string import Template
+# import smtplib
+
+# template = Template(Path('template.html').read_text())
+
+# message = MIMEMultipart()
+# message['from'] = "Noman Ali"
+# message['to'] = 'aliyounas084@gmail.com'
+# message['subject'] = 'this is test script'
+# body = template.subtitute({"name":"Noman Ali"})
+# message.attach(MIMEText(body , "Plain"))
+# message.attach(MIMEImage(Path("name.extension").read_bytes()))
+
+# with smtplib.SMTP(host='smtp.gmail.com', port=587) as smtp:
+#     smtp.ehlo()
+#     smtp.starttls()
+#     smtp.login("email","password")
+#     smtp.send_message(message)
+#     print("Sent...")
+
+
+
+# Command Line argument
+
