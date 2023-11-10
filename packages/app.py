@@ -323,3 +323,7 @@ print(res)
 # pipenv update --outdated
 # pipenv update --outdated
 # pipenv update "request" this will update only request package 
+
+
+
+# pydoc3 math   provide you info for that packages
