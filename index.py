@@ -163,8 +163,8 @@ print(round(2.6))
 print(abs(-2.6))
 
 
-print(math.ceil(2.2))
-print(math.floor(2.2))
+print(math.ceil(2.2)) # 3
+print(math.floor(2.2)) # 2
 
 # Type Conversion's
 
@@ -305,7 +305,7 @@ def get_greeting(name="No_Name"):
 
 
 message = get_greeting("Noman Ali")
-file = open("content.txt", "w")
+file = open("content.txt", "w") 
 file.write(message)
 
 
